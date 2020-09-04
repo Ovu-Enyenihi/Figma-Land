@@ -1,7 +1,7 @@
 body {
     background-color:  #181818;
     color: #FFFFFF;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .header {
@@ -13,6 +13,7 @@ body {
     display: flex;
     justify-items: space-between;
     margin-top: 1.5%;
+    margin-right: 90px;
 }
 
 .navs-div a {
@@ -59,7 +60,7 @@ body {
 }
 
 .banner-btn {
-    margin-left: 36%;
+    margin-left: 40%;
     justify-content: center;
 }
 
@@ -86,11 +87,12 @@ body {
 }
 
 .banner-img {
-    width: 100%;
+    width: 1820px;
+    height: auto;
 }
 
 .features {
-    font-size: 39px;
+    font-size: 52px;
     font-weight: lighter;
     line-height: 88px;
     text-align: center;
@@ -99,18 +101,46 @@ body {
 
 .features-p {
     text-align: center;
+    font-size: 20px;
+    line-height: 30px;
 }
 
 .features-style {
     display: flex;
     justify-content: center;
     position: relative;
-
 }
 
-.features-aside {
+.features-txt {
     flex-direction: column;
     margin-left: 10%;
+}
+
+.features-txt p {
+    font-size: 16px;
+    /* line-height: 24px; */
+    font-weight: normal;
+}
+
+.features-txt h3 {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+.truth::before {
+    content: url(../Vector\ 1.png);
+    padding-right: 30px;
+}
+
+.interface::before {
+    content: url(../Vector\ 2.png);
+    padding-right: 30px;
+}
+
+.rules::before {
+    content: url(../Vector\ 3.png);
+    padding-right: 30px;
 }
 
 .features-img2 {
@@ -120,13 +150,15 @@ body {
 
 .content {
     text-align: center;
-    font-size: 39px;
-    font-weight: lighter;
+    font-size: 52px;
+    font-weight: normal;
     margin-top: 10%;
 }
 
 .content-p {
     text-align: center;
+    font-size: 20px;
+    line-height: 30px;
 }
 
 .card-style {
@@ -192,10 +224,11 @@ body {
 
 .board-img {
     width: 330px;
-    margin-top: 12%;
+    margin-top: 10%;
 }
 
 .content-btn-1 {
+    margin-top: 1%;
     border: none;
     background-color: #4452FE;
     color: #FFFFFF;
@@ -212,9 +245,10 @@ body {
 }
 
 .gallery {
+    margin-top: 10%;
     text-align: center;
-    font-size: 39px;
-    font-weight: lighter;
+    font-size: 52px;
+    font-weight: normal;
 }
 
 .gallery-p {
@@ -256,7 +290,7 @@ body {
     border: 1px solid #FFFFFF;
     width: 110px;
     height: 40px;
-    margin: 10px auto;
+    margin: 2% auto;
     display: block;
 }
 .partners {
@@ -276,7 +310,6 @@ body {
 }
 
 .logos {
-    /* display: flex; */
     justify-content: center;
     margin: 40px 0px;
 }
@@ -289,34 +322,147 @@ body {
     background-color: #181818;
     color: #FFFFFF;
     border: 1px solid #FFFFFF;
-    width: 110px;
+    width: 120px;
     height: 40px;
     margin: 10px auto;
     display: block;
 }
 
 .testimonial {
-    padding-top: 50px;
-}
-
-.testimonial-header {
+    margin-top: 10%;
     text-align: center;
-    font-size: 39px;
-    font-weight: lighter;
+    font-weight: normal;
+    font-size: 52px;
+    letter-spacing: 0.2px;
 }
 
-.slide1 {
-    display: flex;
-    border: 1px solid  #DEDEDE;
-    border-radius: 7px;
-    width: 20%;
-    height: 30%;
+.slide1, .slide2, .slide3, .slide4 {
+    border: 1px solid #DEDEDE;
+    border-radius: 10px;
+    width: 430px;
+    height: 328px;
 }
 
-.head{
+.slide2, .slide4 {
+    margin-left: 1%;
+}
+
+.profile {
+    display: flex;
+    margin-left: 15%;
+    margin-top: 5%;
+}
+
+.profile-name {
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 5%;
+    margin-top: 8%;
+}
+
+.slide-style {
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
+}
+
+.slide-style-2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+}
+
+.slide-p {
+    line-height: 24px;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 1%;
+}
+
+.profile-picture {
+    height: 60px;
+    margin-top: 8%;
+}
+
+.open-type-header {
+    font-size: 52px;
+    font-weight: normal;
+    padding-left: 90px;
+    padding-top: 7%;
+}
+
+.open-type-btn {
+    display: block;
+    background-color: #4452FE;
+    color: #FFFFFF;
+    border: none;
+    padding: 15px 40px;
+    margin-left: 17%;
+}
+
+.open-type-img {
+    padding-left: 22.5%;
+    padding-top: 2%;
+}
+
+.open-type-style {
+    display: flex;
+    background-color:  #343434;
+    border: none;
+    border-radius: 33px;
+    margin-top: 10%;
+    margin-left: 15%;
+    width: 64.9%;
+    height: 370px;
+    overflow-y: hidden;
+}
+
+.footer-style {
+    display: flex;
+    margin-top: 11%;
+    margin-left: 18%;
+}
+
+.footer-style li {
+    list-style-type: none;
+    font-size: 16px;
+    line-height: 3;
+}
+
+.footer-list-2 {
+    margin-left: 100px;
+}
+
+.footer-list-3 {
+    margin-left: 100px;
+}
+
+#list-1 {
+    font-size: 20px;
+}
+
+.contact-style {
+    padding-left: 300px;
+    padding-bottom: 200px;
+    padding-top: 20px;
+}
+
+.contact-details-1, .contact-details-2 {
     display: flex;
 }
 
-.testimonial-section {
-    display: flex;
+.contact-details-2 {
+    margin-top: 10px;
+}
+
+.facebook-logo {
+    margin-left: 30px;
+}
+
+.footer-logos {
+    margin-top: 30px;
+}
+
+.linkedin-logo {
+    margin-left: 30px;
 }
