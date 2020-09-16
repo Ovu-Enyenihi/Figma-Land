@@ -87,7 +87,7 @@ body {
 }
 
 .banner-img {
-    width: 1820px;
+    width: 100%;
     height: auto;
 }
 
@@ -118,7 +118,7 @@ body {
 
 .features-txt p {
     font-size: 16px;
-    /* line-height: 24px; */
+    line-height: 24px;
     font-weight: normal;
 }
 
@@ -143,9 +143,13 @@ body {
     padding-right: 30px;
 }
 
+.features-img1 {
+    position: relative;
+}
+
 .features-img2 {
     position: absolute;
-    top: 60%
+    top: 450px;
 }
 
 .content {
@@ -164,6 +168,7 @@ body {
 .card-style {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     margin-top: 3%;
 }
 
@@ -259,6 +264,7 @@ body {
 
 .first-gallery {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -272,6 +278,7 @@ body {
 
 .second-gallery {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -310,6 +317,9 @@ body {
 }
 
 .logos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     margin: 40px 0px;
 }
@@ -387,8 +397,7 @@ body {
 .open-type-header {
     font-size: 52px;
     font-weight: normal;
-    padding-left: 90px;
-    padding-top: 7%;
+    padding-left: 70px;
 }
 
 .open-type-btn {
@@ -401,7 +410,7 @@ body {
 }
 
 .open-type-img {
-    padding-left: 22.5%;
+    margin-left: 18%;
     padding-top: 2%;
 }
 
@@ -411,10 +420,10 @@ body {
     border: none;
     border-radius: 33px;
     margin-top: 10%;
-    margin-left: 15%;
-    width: 64.9%;
+    margin-left: 10%;
+    max-width: 80%;
     height: 370px;
-    overflow-y: hidden;
+    overflow: hidden;
 }
 
 .footer-style {
@@ -447,10 +456,6 @@ body {
     padding-top: 20px;
 }
 
-.contact-details-1, .contact-details-2 {
-    display: flex;
-}
-
 .contact-details-2 {
     margin-top: 10px;
 }
@@ -465,4 +470,141 @@ body {
 
 .linkedin-logo {
     margin-left: 30px;
+}
+
+@media (max-width:768px) {
+
+    .figma-div img {
+        width: 110px;
+        margin-right: 150px;
+    }
+
+    .navs-div {
+        display: none;
+    }
+
+    .headline {
+        font-size: 60px;
+        line-height: 4rem;
+    }
+
+    .banner-p {
+        font-size: 17px;
+    }
+
+    .banner-btn {
+        margin-left: 25%;
+    }
+
+    .banner-img {
+        max-width: 100%;
+    }
+
+    .features {
+        font-size: 40px;
+    }
+
+    .features-p {
+        font-size: 17px;
+    }
+
+    .features-img1 img {
+        width: 50%;
+        margin: auto;
+        display: block;
+    }
+
+    .features-img2 {
+       left: 35%;
+       margin: auto;
+       top: 250px;
+    }
+
+    .features-img2 img {
+        display: none;
+    }
+
+    .features-txt {
+        margin: auto;
+    }
+
+    .features-style {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .content {
+        font-size: 40px;
+    }
+
+    .content-p {
+        font-size: 17px;  
+    }
+
+    .card-style {
+        display: block;
+    }
+
+    .card-1 {
+        margin: auto;
+        width: 330px;
+    }
+
+    .card-2 {
+        margin: auto;
+        width: 330px;
+    }
+
+    .gallery {
+        font-size: 40px;
+    }
+
+    .gallery-p {
+        font-size: 17px;
+    }
+
+    .img-5, .img-6, .img-7 {
+        display: none;
+    }
+
+    .slide-style, .slide-style-2 {
+        display: block;
+        margin: auto;
+    }
+
+    .footer-style {
+        display: block;
+        margin-left: 5%;
+    }
+    .footer-list-2, .footer-list-3 {
+        margin-left: 0px;
+    }
+
+    .contact-style {
+        padding-left: 30px;
+    }
+
+    .first-gallery {
+        margin: auto;
+    }
+
+    .slide1, .slide2, .slide3, .slide4 {
+        border: 1px solid #9f9d9d;
+        border-radius: 10px;
+        width: 350px;
+        height: 350px;
+        margin-bottom: 3%;
+        margin: auto;
+    }
+
+    .open-type-style {
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (min-width: 1024px) and (max-width:1290px){
+    .contact-style{
+        display: none !important;
+    }
 }
